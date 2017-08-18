@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Employee Registration</title>
+		<link rel="stylesheet" type="text/css" href="menuStyle.css"/>		
+	</head>
+	
+	<body>
+		<nav id="menu">
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="employee.html">Employee</a></li>
+			</ul>
+		</nav>
+		
+		<h2> <center> EMPLOYEE REGISTRATION </center> </h2>
+		
+		<form action="#" method="POST">
+			<fieldset>
+				<legend> Actions </legend>
+				<button type="submit" value= "Submit" class="btn1">Save</button>
+				<a href="employee.html">Back</a>
+			</fieldset>
+
+			<fieldset>
+				<legend> Registration </legend>
+				
+				Username: <input type="text" name="Name"/>
+				<br><br>
+				Wipro Id: <input type="text" name="wiproId" 
+				          placeholder="XX999999"
+				          required pattern = "[A-Za-z]{2}[0-9]{6}"/>
+				<br><br>				
+				MC Id: <input type="text" name="mcId"
+				        placeholder="X9999999"
+						required pattern="[A-Za-z]{1}[0-9]{7}">
+				<br><br>
+				Wipro Email: <input type="text" name="wiproEmail" 
+							 placeholder="XX999999@wipro.com"
+							 required pattern="[A-Za-z]{2}[0-9]{6}@wipro.com"/>
+				<br><br>
+				Team: <input type="text" name="Team" />
+				<br><br>				
+				Contract: <datalist id = "browsers">
+							<option value="ESS">
+							<option value="Commercials">
+							<option value="Non-Commercials">
+						  </datalist>
+						  <input list="browsers"/>
+			</fieldset>
+
+			<fieldset>
+				<legend> Actions </legend>
+				<button type="submit" value= "Submit" class="btn1">Save</button>
+				<a href="employee.html">Back</a>
+			</fieldset>
+		</form>
+	</body>
+</html>
+
